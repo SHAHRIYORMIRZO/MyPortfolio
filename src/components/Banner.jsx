@@ -5,7 +5,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "./Banner.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-
+import cv from "../assets/cv.pdf";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -91,16 +91,11 @@ export const Banner = () => {
             <TrackVisibility>
               <div>
                 <img src={Img} alt="Header Img" />
+                <a href={cv} className="cv">
+                  Download CV
+                </a>
               </div>
             </TrackVisibility>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} md={4} xl={4}>
-            <div>First Name</div>
-          </Col>
-          <Col>
-            <div>Shohriyormirzo</div>
           </Col>
         </Row>
       </Container>

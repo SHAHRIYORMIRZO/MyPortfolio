@@ -18,7 +18,36 @@
     margin-bottom: 16px;
     display: inline-block;
 }
-
+.cv{
+    border: 1px solid #ffb400;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffb400;
+    font-size: 18px;
+    transition: .3s ease;
+    position: relative;
+    z-index: 3;
+}
+.cv::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #ffb400;
+    z-index: -1;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.cv:hover::after{
+    transform: scale(1);
+}
+.cv:hover{
+    color: #fff;
+    border-color: #fff;
+}
 .banner h1 {
     font-size: 50px;
     color: #ffb400;
