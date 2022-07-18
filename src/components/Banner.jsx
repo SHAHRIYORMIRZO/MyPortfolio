@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Img from "../assets/img/personal-image.jpg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import "./Banner.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+
 import cv from "../assets/cv.pdf";
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
